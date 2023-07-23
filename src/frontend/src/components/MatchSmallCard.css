@@ -1,0 +1,22 @@
+.MatchSmallCard{
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.MatchSmallCard .match-date{
+    margin-top: 10px ;
+}
+
+
+/* .MatchSmallCard .match-venue{
+    margin-top: 10px;
+} */
+
+
+.MatchSmallCard .match-result{
+    margin-top: 10px;
+}
+
+.MatchSmallCard .additional-detail{
+    margin-top: 10px;
+}

@@ -1,5 +1,15 @@
 .App {
   padding: 20px;
   text-align: left;
+}
 
+.lost-card{
+  background-color: #a34d5d;
+  padding: 10px;
+}
+
+
+.won-card{
+  background-color: #4da375;
+  padding: 10px;
 }

@@ -3,6 +3,9 @@ import { MatchDetailCard } from '../components/MatchDetailCard';
 import { MatchSmallCard } from '../components/MatchSmallCard';
 import { useParams } from 'react-router-dom';
 
+import './MatchPage.css'
+import { YearSelector } from '../components/YearSelector';
+
 
 export const MatchPage = () => {
 
@@ -17,11 +20,20 @@ export const MatchPage = () => {
                 setMatches(data);
             };
             fetchMatches();
-        } , []
+        } , [teamName,year]
 );  
   return (
     <div className="MatchPage">
+      <div className='year-selector'>
+          <h3> Select Year</h3>
+          <YearSelector teamName={teamName}/>
+      </div>
+      <div>
+      <h1>
+        {teamName} matches in {year}
+      </h1>
       {matches.map(match => <MatchDetailCard teamName={teamName} match = {match}/>)}
+      </div>
     </div>
   );
 } 

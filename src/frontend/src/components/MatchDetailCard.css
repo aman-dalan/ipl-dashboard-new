@@ -1,5 +1,7 @@
 .MatchDetailCard{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
 }
 
 .MatchDetailCard .match-date{
@@ -14,4 +16,11 @@
 
 .MatchDetailCard .match-result{
     margin-top: 10px;
+}
+
+.MatchDetailCard .additional-detail{
+    text-align: right;
+    & > p{
+        margin-bottom: 20px;
+    }
 }
